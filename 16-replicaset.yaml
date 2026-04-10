@@ -27,4 +27,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: nginx:mainline-alpine3.23
