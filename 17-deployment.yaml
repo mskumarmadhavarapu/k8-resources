@@ -8,7 +8,7 @@ metadata:
     purpose: rs-demo
     tier: frontend
     component: frontend
-    annotations:
+  annotations:
     kubernetes.io/change-cause: "moving to 1.29.7
 spec:
   replicas: 2
