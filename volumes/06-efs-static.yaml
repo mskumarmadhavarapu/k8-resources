@@ -25,3 +25,21 @@ spec:
   resources:
     requests:
       storage: 5Gi
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - name: html-data
+      mountPath: /var/share/nginx/html
+  nodeSelector:
+    topology.kubernetes.io/zone: us-east-1a
+  volumes:
+  - name: html-data
+    persistentVolumeClaim:
+      claimName: efs-static
