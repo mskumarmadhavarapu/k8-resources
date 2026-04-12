@@ -5,4 +5,4 @@ metadata:
   name: roboshop-sc
 provisioner: ebs.csi.aws.com
 volumeBindingMode: WaitForFirstConsumer
-reclaimPolicty: Retain
+reclaimPolicy: Retain
