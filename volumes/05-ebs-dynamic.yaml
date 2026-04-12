@@ -5,7 +5,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: roboshop-sc
+  storageClassName: roboshop-ebs
   resources:
     requests:
       storage: 4Gi
@@ -22,7 +22,7 @@ spec:
     - name: html-data
       mountPath: /var/share/nginx/html
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1c
+    topology.kubernetes.io/zone: us-east-1a
   volumes:
   - name: html-data
     persistentVolumeClaim:
