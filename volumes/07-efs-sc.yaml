@@ -8,4 +8,4 @@ parameters:
   fileSystemId: fs-098e9865e7fdbf2ec
   directoryPerms: "700"
   basePath: "/roboshop" # optional
-  
+  reclaimPolicy: Retain
